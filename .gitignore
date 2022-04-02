@@ -1,0 +1,5 @@
+/ru.vasenin.statistics_2.iml
+/.idea/
+
+# Project exclude paths
+/target/
