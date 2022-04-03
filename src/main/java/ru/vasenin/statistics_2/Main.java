@@ -8,7 +8,10 @@ public class Main {
 
         List<Passenger> list = ParceCsv.parceCsv();
 
-        Statistic.averageAge(list);
+        Statistic.getStatisticForPassengers(list, Statistic.FEMALE, Statistic.FEMALE_LIFE);
+        Statistic.getStatisticForPassengers(list, Statistic.MALE, Statistic.MALE_DEATH);
+
+        Statistic.countName(list);
 
     }
 
