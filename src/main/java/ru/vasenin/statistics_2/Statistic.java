@@ -20,7 +20,7 @@ public class Statistic {
         }
 
         for (Map.Entry<Integer, Integer> item : numberOfRepetitions.entrySet()) {
-            System.out.println("Key: " + item.getKey() + " " + "Value: " + item.getValue());
+            System.out.println("Длина имени: " + item.getKey() + " " + "Кол-во раз повторяется: " + item.getValue());
         }
     }
 
