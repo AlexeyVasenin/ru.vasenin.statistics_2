@@ -34,4 +34,8 @@ public class Passenger {
             this.age = 0d;
         } else this.age = Double.parseDouble(age);
     }
+
+    public void setName(String name) {
+        this.name = name.replaceAll("\"", "");
+    }
 }

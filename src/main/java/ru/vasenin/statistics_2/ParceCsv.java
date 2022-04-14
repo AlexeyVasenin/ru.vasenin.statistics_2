@@ -16,9 +16,7 @@ public class ParceCsv {
         List<Passenger> passengers = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(DATA_FILE_CSV))) {
-            List<String> fileLines;
-
-            fileLines = br
+            List<String> fileLines = br
                     .lines()
                     .skip(1)
                     .collect(Collectors.toList());
@@ -51,6 +49,7 @@ public class ParceCsv {
     private static boolean isColumnPart(String text) {
         String trimText = text.trim();
         return trimText.indexOf("\"") == trimText.lastIndexOf("\"") && trimText.endsWith("\"") || trimText.endsWith("\"\"\"") || trimText.endsWith(")\"");
+
     }
 
 }
